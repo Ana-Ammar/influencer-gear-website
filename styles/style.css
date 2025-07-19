@@ -29,6 +29,13 @@
     font-weight: 700;
     color: white;
     border: none;
+    transition:  ease-in 0.3s;
+}
+
+.btn:hover{
+    background: #6C6C6C;
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .nav-container, .banner{
@@ -143,7 +150,7 @@ main{
 }
 
 .collection-title{
-    font-size: 28px;
+    font-size: 1.75em;
     text-align: center;
 }
 .fa-star{
@@ -160,6 +167,48 @@ main{
     margin-top: 50px;
 }
 
+/* Feature Section */
+.sec-three{
+    width: 1110px;
+    display: flex;
+    gap: 96px;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+.feature-title{
+    margin: 0;
+    font-size: 2.3em;
+    font-weight: 700;
+    color: #0A0826;
+}
+.feature-description{
+    margin: 16px 0px;
+    font-weight: 700;
+    color: #6C6C6C;
+}
+.feature-btn{
+    width: 155px;
+}
+
+/* Footer Section */
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #0A0826;
+    box-sizing: content-box;
+    padding: 50px 0px;
+}
+
+footer > p, h4{
+    margin: 3px;
+    color: white;
+}
+.logo{
+    color: white;
+    margin: 32px 8px 0px;
+}
 /* Responsive for Android */
 @media screen and (max-width: 578px) {
     .nav-container, .navbar{
@@ -192,4 +241,12 @@ main{
         margin-top: 20px;
         
     }
+    .sec-three{
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
 }
